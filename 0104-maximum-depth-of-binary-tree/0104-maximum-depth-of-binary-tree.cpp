@@ -11,14 +11,17 @@
  */
 class Solution {
 public:
-    int maxDepth(TreeNode* root) {
+    int calcDiameter(TreeNode* root){
         if(!root)
             return 0;
 
-        int left = maxDepth(root->left);
-        int right = maxDepth(root->right);
-        int ans = max(left, right) + 1;
+        int left = calcDiameter(root->left);
+        int right = calcDiameter(root->right);
 
-        return ans;
+        return max(left, right)+1;
+    }
+
+    int maxDepth(TreeNode* root) {
+        return calcDiameter(root);
     }
 };
