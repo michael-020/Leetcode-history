@@ -10,20 +10,30 @@
  */
 class Solution {
 public:
-    ListNode* middleNode(ListNode* head) {
+    int findLen(ListNode* &head) {
         ListNode* temp = head;
         int len = 0;
         while(temp){
-            temp = temp->next;
             len++;
-        } 
-        int halfLen = ceil(len/2)+1;
-        temp = head;
-        while(halfLen > 1 && temp){
             temp = temp->next;
-            halfLen--;
         }
+        return len;
+    }
 
+    ListNode* middleNode(ListNode* head) {
+        if(!head)
+            return nullptr;
+        if(!head->next)
+            return head;
+
+        int len = findLen(head);
+        ListNode* temp = head;
+        int mid = len/2;
+        cout << len;
+        cout << mid;
+        while(mid--){
+            temp = temp->next;
+        }
         return temp;
     }
 };
