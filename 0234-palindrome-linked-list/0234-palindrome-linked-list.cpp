@@ -23,10 +23,8 @@ public:
     }
 
     ListNode* revLL(ListNode* &head){
-        ListNode* dummy = new ListNode(0);
         ListNode* curr = head;
-        ListNode* prev = dummy;
-        dummy->next = head;
+        ListNode* prev = 0;
 
         while(curr){
             ListNode* nxt = curr->next;
@@ -40,14 +38,23 @@ public:
 
     bool isPalindrome(ListNode* head) {
         if(!head->next)
-            return head;
+            return true;
 
-        ListNode* cHead = new ListNode(head->val);
-        copyLL(head, cHead);
-        ListNode* newHead = revLL(cHead);
+        ListNode* fast = head;
+        ListNode* slow = head;
+        while(fast){
+            fast = fast->next;
+
+            if(fast && fast->next){
+                fast = fast->next;
+                slow = slow->next;
+            }
+        }
+        ListNode* newHead = slow->next;
+        slow->next = nullptr;
         ListNode* temp1 = head;
-        ListNode* temp2 = newHead;
-        while(temp1){
+        ListNode* temp2 = revLL(newHead);
+        while(temp1 && temp2){
             if(temp1->val != temp2->val)
                 return false;
             
