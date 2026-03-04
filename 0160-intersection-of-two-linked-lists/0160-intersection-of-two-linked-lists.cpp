@@ -8,49 +8,44 @@
  */
 class Solution {
 public:
-    int getLength(ListNode* head) {
+    int getLen(ListNode* &head){
+        ListNode* temp = head;
         int len = 0;
-        while (head) {
-            ++len;
-            head = head->next;
+
+        while(temp){
+            temp = temp->next;
+            len++;
         }
+
         return len;
     }
+
     ListNode *getIntersectionNode(ListNode *headA, ListNode *headB) {
-        if(!headA || !headB)
-            return nullptr;
-        ListNode* a = headA;
-        ListNode* b = headB;
-        int n = getLength(headA);
-        int m = getLength(headB);
-        int diff = abs(n-m);
-        if(n > m){
-            while(diff--){
-                a = a->next;
+        int lenA = getLen(headA);
+        int lenB = getLen(headB);
+
+        ListNode* tempA = headA;
+        ListNode* tempB = headB;
+
+        int diff = lenA > lenB ? lenA - lenB : lenB - lenA;
+        if(lenA > lenB){
+            for(int i=0; i<diff; i++){
+                tempA = tempA->next;
             }
         }
-        else if(n < m){
-            while(diff--){
-                b = b->next;
+        else if(lenA < lenB){
+            for(int i=0; i<diff; i++){
+                tempB = tempB->next;
             }
         }
-        else{
-            a = headA;
-            b = headB;
+
+        while(tempA || tempB){
+            if(tempA == tempB)
+                return tempA;
+
+            tempA = tempA->next;
+            tempB = tempB->next;
         }
-
-        while(a->next && b->next){
-            if(a == b)
-                return a;
-            a = a->next;
-            b = b->next;
-        }
-
-        if(a == b)
-            return a;
-
-        if(a->next == 0 && b->next == 0 && a != b)
-            return 0;
 
         return 0;
     }
