@@ -10,27 +10,27 @@
  */
 class Solution {
 public:
-    void revLL(ListNode* &prev, ListNode* &curr){
+    void revLL(ListNode* &curr, ListNode* &prev){
         if(!curr)
             return;
 
         ListNode* nxt = curr->next;
+
         curr->next = prev;
+
         prev = curr;
         curr = nxt;
-
-        revLL(prev, curr);
+        revLL(curr, prev);
     }
 
     ListNode* reverseList(ListNode* head) {
-        if(!head)
-            return nullptr;
-        if(!head->next)
+        if(!head || !head->next)   
             return head;
 
+        ListNode* prev = nullptr;
         ListNode* curr = head;
-        ListNode* prev = 0;
-        revLL(prev, curr);
+
+        revLL(curr, prev);
 
         return prev;
     }
