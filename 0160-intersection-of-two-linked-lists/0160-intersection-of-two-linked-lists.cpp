@@ -31,11 +31,15 @@ public:
 
         while(l1 != l2 ){
 
-            if(!l1) l1 = headB;
-            if(!l2) l2 = headA;
+            if(!l1) 
+                l1 = headB;
+            else
+                l1 = l1->next;
 
-            l1 = l1->next;
-            l2 = l2->next;
+            if(!l2)     
+                l2 = headA;
+            else
+                l2 = l2->next;
         }
 
         return l1;
