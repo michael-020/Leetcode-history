@@ -28,21 +28,11 @@ public:
         int lenB = getLen(headB);
         ListNode* l1 = headA;
         ListNode* l2 = headB;
-        int k = lenA <= lenB ? lenB-lenA : lenA-lenB;
-        if(lenA > lenB){
-            for(int i=0; i<k; i++){
-                l1 = l1->next;
-            }
-        }
-        else{
-            for(int i=0; i<k; i++){
-                l2 = l2->next;
-            }
-        }
 
-        while(l1 != l2){
-            if(!l1) return 0;
-            if(!l2) return 0;
+        while(l1 != l2 ){
+
+            if(!l1) l1 = headB;
+            if(!l2) l2 = headA;
 
             l1 = l1->next;
             l2 = l2->next;
