@@ -10,38 +10,28 @@
  */
 class Solution {
 public:
-    void copyLL(ListNode* &head, ListNode* &cHead){
-        ListNode* temp = head->next;
-        ListNode* cTemp = cHead;
-
-        while(temp){
-            ListNode* newNode = new ListNode(temp->val);
-            cTemp->next = newNode;
-            temp = temp->next;
-            cTemp = cTemp->next;
-        }
-    }
-
     ListNode* revLL(ListNode* &head){
-        ListNode* curr = head;
         ListNode* prev = 0;
-
+        ListNode* curr = head;
         while(curr){
             ListNode* nxt = curr->next;
 
             curr->next = prev;
+
             prev = curr;
             curr = nxt;
         }
+
         return prev;
     }
 
     bool isPalindrome(ListNode* head) {
-        if(!head->next)
-            return true;
+        if(!head)
+            false;
 
-        ListNode* fast = head;
         ListNode* slow = head;
+        ListNode* fast = head;
+
         while(fast){
             fast = fast->next;
 
@@ -49,18 +39,23 @@ public:
                 fast = fast->next;
                 slow = slow->next;
             }
+
+            if(fast == slow)
+                break;
         }
-        ListNode* newHead = slow->next;
-        slow->next = nullptr;
-        ListNode* temp1 = head;
-        ListNode* temp2 = revLL(newHead);
-        while(temp1 && temp2){
-            if(temp1->val != temp2->val)
+
+        ListNode* newHead = revLL(slow->next);
+        ListNode* l1 = head;
+        ListNode* l2 = newHead;
+
+        while(l1 && l2){
+            if(l1->val != l2->val)
                 return false;
             
-            temp1 = temp1->next;
-            temp2 = temp2->next;
+            l1 = l1->next;
+            l2 = l2->next;
         }
+
         return true;
     }
 };
