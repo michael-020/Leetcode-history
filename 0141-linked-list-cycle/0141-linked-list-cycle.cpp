@@ -12,8 +12,9 @@ public:
         if(!head)
             return false;
 
-        ListNode* fast = head;
         ListNode* slow = head;
+        ListNode* fast = head;
+
         while(fast){
             fast = fast->next;
 
