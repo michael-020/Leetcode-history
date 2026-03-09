@@ -16,48 +16,40 @@ public:
 
 class Solution {
 public:
-    Node* findRandomNode(Node* copyHead, Node* originalHead, Node* temp){
-        if(!temp)
-            return nullptr;
-
-        Node* target = temp->random;
-
-        Node* t1 = originalHead;
-        Node* t2 = copyHead;
-
-        while(t1 && t2){
-            if(t1 == target)
-                return t2;
-
-            t1 = t1->next;
-            t2 = t2->next;
-        }
-        return 0;
-    }
-
     Node* copyRandomList(Node* head) {
         if(!head)
             return head;
 
-        // Node dummy(-1);
-        // Node* tail = &dummy;
         Node* temp = head;
-        unordered_map<Node*, Node*> mpp;
+
         while(temp){
-            Node* newNode = new Node(temp->val);
-            mpp[temp] = newNode;
-            temp = temp->next;
+            Node* nxt = temp->next;
+            temp->next = new Node(temp->val);
+            temp->next->next = nxt;
+            temp = nxt;
         }
-        
+
         temp = head;
-
         while(temp){
-            mpp[temp]->next = mpp[temp->next]; 
-            mpp[temp]->random = mpp[temp->random];
+            if(temp->random)
+                temp->next->random = temp->random->next;
 
+            temp = temp->next->next;
+        }
+
+        temp = head;
+        Node* cHead = head->next;
+        Node* copy = cHead;
+        while(temp){
+            temp->next = temp->next->next;
+
+            if(copy->next)
+                copy->next = copy->next->next;
+
+            copy = copy->next;
             temp = temp->next;
         }
 
-        return mpp[head];
+        return cHead;
     }
 };
