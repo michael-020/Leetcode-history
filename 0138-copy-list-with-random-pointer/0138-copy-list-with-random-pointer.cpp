@@ -39,24 +39,25 @@ public:
         if(!head)
             return head;
 
-        Node dummy(-1);
-        Node* tail = &dummy;
+        // Node dummy(-1);
+        // Node* tail = &dummy;
         Node* temp = head;
+        unordered_map<Node*, Node*> mpp;
         while(temp){
             Node* newNode = new Node(temp->val);
-            tail->next = newNode;
-            tail = tail->next;
+            mpp[temp] = newNode;
             temp = temp->next;
         }
-        Node* it = dummy.next;
+        
         temp = head;
+
         while(temp){
-            Node* randomNode = findRandomNode(dummy.next, head, temp);
-            it->random = randomNode;
-            it = it->next;
+            mpp[temp]->next = mpp[temp->next]; 
+            mpp[temp]->random = mpp[temp->random];
+
             temp = temp->next;
         }
 
-        return dummy.next;
+        return mpp[head];
     }
 };
