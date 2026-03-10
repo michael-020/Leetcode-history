@@ -7,15 +7,16 @@ public:
     }
     
     void push(int x) {
-        vector<int> v;
+        stack<int> temp;
         int n = st.size();
-        for(int i=0; i<n; i++){
-            v.push_back(st.top());
+        while(!st.empty()){
+            temp.push(st.top());
             st.pop();
         }
         st.push(x);
-        for(int i = v.size()-1; i >= 0; i--){
-            st.push(v[i]);
+        while(!temp.empty()){
+            st.push(temp.top());
+            temp.pop(); 
         }
     }
     
