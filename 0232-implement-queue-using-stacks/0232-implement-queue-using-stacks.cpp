@@ -1,39 +1,41 @@
 class MyQueue {
 public:
-    stack<int>st;
+    stack<int> inStack, outStack;
 
     MyQueue() {
         
     }
     
     void push(int x) {
-        stack<int> temp;
-        int n = st.size();
-        while(!st.empty()){
-            temp.push(st.top());
-            st.pop();
-        }
-        st.push(x);
-        while(!temp.empty()){
-            st.push(temp.top());
-            temp.pop(); 
-        }
+        inStack.push(x);
     }
     
     int pop() {
-        if(!st.size()) return -1;
-        int front = st.top();
-        st.pop();
+
+        if(outStack.empty()){
+            while(!inStack.empty()){
+                outStack.push(inStack.top());
+                inStack.pop();
+            }
+        }
+        int front = outStack.top();
+        outStack.pop();
         return front;
     }
     
     int peek() {
-        if(!st.size()) return -1;
-        return st.top();
+        if(outStack.empty()){
+            while(!inStack.empty()){
+                outStack.push(inStack.top());
+                inStack.pop();
+            }
+        }
+
+        return outStack.top();
     }
     
     bool empty() {
-        return st.size() == 0;
+        return inStack.empty() && outStack.empty();
     }
 };
 
