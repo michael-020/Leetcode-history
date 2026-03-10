@@ -48,6 +48,7 @@ Collection of some of the LeetCode questions I have solved
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0020-valid-parentheses](https://github.com/Michael-2702/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
 | [0225-implement-stack-using-queues](https://github.com/Michael-2702/Leetcode/tree/main/0225-implement-stack-using-queues/) | Easy |
 | [0232-implement-queue-using-stacks](https://github.com/Michael-2702/Leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/Michael-2702/Leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
@@ -61,4 +62,8 @@ Collection of some of the LeetCode questions I have solved
 | ------- | ------- |
 | [0225-implement-stack-using-queues](https://github.com/Michael-2702/Leetcode/tree/main/0225-implement-stack-using-queues/) | Easy |
 | [0232-implement-queue-using-stacks](https://github.com/Michael-2702/Leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0020-valid-parentheses](https://github.com/Michael-2702/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
 <!---LeetCode Topics End-->
