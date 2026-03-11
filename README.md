@@ -45,6 +45,7 @@ Collection of some of the LeetCode questions I have solved
 | [0141-linked-list-cycle](https://github.com/Michael-2702/Leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/Michael-2702/Leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0160-intersection-of-two-linked-lists](https://github.com/Michael-2702/Leetcode/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
+| [0496-next-greater-element-i](https://github.com/Michael-2702/Leetcode/tree/main/0496-next-greater-element-i/) | Easy |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -52,6 +53,7 @@ Collection of some of the LeetCode questions I have solved
 | [0225-implement-stack-using-queues](https://github.com/Michael-2702/Leetcode/tree/main/0225-implement-stack-using-queues/) | Easy |
 | [0232-implement-queue-using-stacks](https://github.com/Michael-2702/Leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/Michael-2702/Leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
+| [0496-next-greater-element-i](https://github.com/Michael-2702/Leetcode/tree/main/0496-next-greater-element-i/) | Easy |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -66,4 +68,12 @@ Collection of some of the LeetCode questions I have solved
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0020-valid-parentheses](https://github.com/Michael-2702/Leetcode/tree/main/0020-valid-parentheses/) | Easy |
+## Array
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0496-next-greater-element-i](https://github.com/Michael-2702/Leetcode/tree/main/0496-next-greater-element-i/) | Easy |
+## Monotonic Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0496-next-greater-element-i](https://github.com/Michael-2702/Leetcode/tree/main/0496-next-greater-element-i/) | Easy |
 <!---LeetCode Topics End-->
