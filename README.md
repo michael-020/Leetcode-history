@@ -55,12 +55,14 @@ Collection of some of the LeetCode questions I have solved
 | [0232-implement-queue-using-stacks](https://github.com/Michael-2702/Leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
 | [0234-palindrome-linked-list](https://github.com/Michael-2702/Leetcode/tree/main/0234-palindrome-linked-list/) | Easy |
 | [0496-next-greater-element-i](https://github.com/Michael-2702/Leetcode/tree/main/0496-next-greater-element-i/) | Easy |
+| [0901-online-stock-span](https://github.com/Michael-2702/Leetcode/tree/main/0901-online-stock-span/) | Medium |
 ## Design
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0155-min-stack](https://github.com/Michael-2702/Leetcode/tree/main/0155-min-stack/) | Medium |
 | [0225-implement-stack-using-queues](https://github.com/Michael-2702/Leetcode/tree/main/0225-implement-stack-using-queues/) | Easy |
 | [0232-implement-queue-using-stacks](https://github.com/Michael-2702/Leetcode/tree/main/0232-implement-queue-using-stacks/) | Easy |
+| [0901-online-stock-span](https://github.com/Michael-2702/Leetcode/tree/main/0901-online-stock-span/) | Medium |
 ## Queue
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -78,4 +80,9 @@ Collection of some of the LeetCode questions I have solved
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0496-next-greater-element-i](https://github.com/Michael-2702/Leetcode/tree/main/0496-next-greater-element-i/) | Easy |
+| [0901-online-stock-span](https://github.com/Michael-2702/Leetcode/tree/main/0901-online-stock-span/) | Medium |
+## Data Stream
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0901-online-stock-span](https://github.com/Michael-2702/Leetcode/tree/main/0901-online-stock-span/) | Medium |
 <!---LeetCode Topics End-->
