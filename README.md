@@ -46,6 +46,7 @@ Collection of some of the LeetCode questions I have solved
 | [0142-linked-list-cycle-ii](https://github.com/Michael-2702/Leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0160-intersection-of-two-linked-lists](https://github.com/Michael-2702/Leetcode/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
 | [0496-next-greater-element-i](https://github.com/Michael-2702/Leetcode/tree/main/0496-next-greater-element-i/) | Easy |
+| [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Michael-2702/Leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 ## Stack
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -99,6 +100,7 @@ Collection of some of the LeetCode questions I have solved
 | [0144-binary-tree-preorder-traversal](https://github.com/Michael-2702/Leetcode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0145-binary-tree-postorder-traversal](https://github.com/Michael-2702/Leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/Michael-2702/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+| [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Michael-2702/Leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -106,6 +108,7 @@ Collection of some of the LeetCode questions I have solved
 | [0144-binary-tree-preorder-traversal](https://github.com/Michael-2702/Leetcode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0145-binary-tree-postorder-traversal](https://github.com/Michael-2702/Leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/Michael-2702/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+| [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Michael-2702/Leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 ## Binary Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -114,9 +117,15 @@ Collection of some of the LeetCode questions I have solved
 | [0144-binary-tree-preorder-traversal](https://github.com/Michael-2702/Leetcode/tree/main/0144-binary-tree-preorder-traversal/) | Easy |
 | [0145-binary-tree-postorder-traversal](https://github.com/Michael-2702/Leetcode/tree/main/0145-binary-tree-postorder-traversal/) | Easy |
 | [0199-binary-tree-right-side-view](https://github.com/Michael-2702/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+| [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Michael-2702/Leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0102-binary-tree-level-order-traversal](https://github.com/Michael-2702/Leetcode/tree/main/0102-binary-tree-level-order-traversal/) | Medium |
 | [0199-binary-tree-right-side-view](https://github.com/Michael-2702/Leetcode/tree/main/0199-binary-tree-right-side-view/) | Medium |
+| [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Michael-2702/Leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
+## Sorting
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Michael-2702/Leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 <!---LeetCode Topics End-->
