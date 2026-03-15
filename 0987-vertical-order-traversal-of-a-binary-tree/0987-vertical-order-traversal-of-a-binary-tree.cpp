@@ -41,7 +41,10 @@ public:
         for(auto &col : nodes){
             vector<int> v;
             for(auto &row : col.second){
-                v.insert(v.end(), row.second.begin(), row.second.end());
+                // v.insert(v.end(), row.second.begin(), row.second.end());
+                for(int val : row.second){
+                    v.push_back(val);
+                }
             }
             ans.push_back(v);
         }
