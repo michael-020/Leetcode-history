@@ -12,14 +12,14 @@
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        vector<int> inorder;
+        vector<int> ans;
         TreeNode* curr = root;
         while(curr){
             if(!curr->left){
-                inorder.push_back(curr->val);
+                ans.push_back(curr->val);
                 curr = curr->right;
             }
-            else {
+            else{
                 TreeNode* prev = curr->left;
                 while(prev->right && prev->right != curr){
                     prev = prev->right;
@@ -29,14 +29,13 @@ public:
                     prev->right = curr;
                     curr = curr->left;
                 }
-                else {
+                else{
                     prev->right = nullptr;
-                    inorder.push_back(curr->val);
+                    ans.push_back(curr->val);
                     curr = curr->right;
                 }
             }
         }
-
-        return inorder;
+        return ans;
     }
 };
