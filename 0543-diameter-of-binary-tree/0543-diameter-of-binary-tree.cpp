@@ -11,6 +11,8 @@
  */
 class Solution {
 public:
+    int diameter = 0;
+
     int findDiameter(TreeNode* root){
         if(!root)
             return 0;
@@ -18,6 +20,7 @@ public:
         int left = findDiameter(root->left);
         int right = findDiameter(root->right);
 
+        diameter = max(left+right, diameter);
         return max(left, right)+1;
     }
 
@@ -25,10 +28,8 @@ public:
         if(!root)
             return 0;
 
-        int op1 = diameterOfBinaryTree(root->left);
-        int op2 = diameterOfBinaryTree(root->right);
-        int op3 = findDiameter(root->left)+findDiameter(root->right);
+        findDiameter(root);
 
-        return max(op1, max(op2, op3));
+        return diameter;
     }
 };
