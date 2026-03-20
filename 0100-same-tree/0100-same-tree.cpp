@@ -11,14 +11,37 @@
  */
 class Solution {
 public:
+    void postOrder(TreeNode* root, vector<int> &v){
+        if(!root){
+            v.push_back(INT_MIN);
+            return;
+        }
+
+        postOrder(root->left, v);
+        postOrder(root->right, v);
+        v.push_back(root->val);
+    }
+
     bool isSameTree(TreeNode* p, TreeNode* q) {
         if(!p && !q)
             return true;
         if(!p || !q)
             return false;
-        if(p->val != q->val)
+        
+        vector<int> postOrderP;
+        vector<int> postOrderQ;
+
+        postOrder(p, postOrderP);
+        postOrder(q, postOrderQ);
+
+        if(postOrderP.size() != postOrderQ.size())
             return false;
 
-        return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
+        for(int i=0; i<postOrderP.size(); i++){
+            if(postOrderP[i] != postOrderQ[i])
+                return false;
+        }
+
+        return true;
     }
 };
