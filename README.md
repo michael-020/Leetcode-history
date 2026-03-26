@@ -30,6 +30,7 @@ Collection of some of the LeetCode questions I have solved
 | ------- | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Michael-2702/Leetcode/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0061-rotate-list](https://github.com/Michael-2702/Leetcode/tree/main/0061-rotate-list/) | Medium |
+| [0075-sort-colors](https://github.com/Michael-2702/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Michael-2702/Leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/Michael-2702/Leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
 | [0160-intersection-of-two-linked-lists](https://github.com/Michael-2702/Leetcode/tree/main/0160-intersection-of-two-linked-lists/) | Easy |
@@ -80,6 +81,7 @@ Collection of some of the LeetCode questions I have solved
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0075-sort-colors](https://github.com/Michael-2702/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0084-largest-rectangle-in-histogram](https://github.com/Michael-2702/Leetcode/tree/main/0084-largest-rectangle-in-histogram/) | Hard |
 | [0496-next-greater-element-i](https://github.com/Michael-2702/Leetcode/tree/main/0496-next-greater-element-i/) | Easy |
 ## Monotonic Stack
@@ -141,5 +143,6 @@ Collection of some of the LeetCode questions I have solved
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0075-sort-colors](https://github.com/Michael-2702/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Michael-2702/Leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
 <!---LeetCode Topics End-->
