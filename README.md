@@ -42,6 +42,7 @@ Collection of some of the LeetCode questions I have solved
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0073-set-matrix-zeroes](https://github.com/Michael-2702/Leetcode/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0138-copy-list-with-random-pointer](https://github.com/Michael-2702/Leetcode/tree/main/0138-copy-list-with-random-pointer/) | Medium |
 | [0141-linked-list-cycle](https://github.com/Michael-2702/Leetcode/tree/main/0141-linked-list-cycle/) | Easy |
 | [0142-linked-list-cycle-ii](https://github.com/Michael-2702/Leetcode/tree/main/0142-linked-list-cycle-ii/) | Medium |
@@ -81,6 +82,7 @@ Collection of some of the LeetCode questions I have solved
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0073-set-matrix-zeroes](https://github.com/Michael-2702/Leetcode/tree/main/0073-set-matrix-zeroes/) | Medium |
 | [0075-sort-colors](https://github.com/Michael-2702/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0084-largest-rectangle-in-histogram](https://github.com/Michael-2702/Leetcode/tree/main/0084-largest-rectangle-in-histogram/) | Hard |
 | [0496-next-greater-element-i](https://github.com/Michael-2702/Leetcode/tree/main/0496-next-greater-element-i/) | Easy |
@@ -145,4 +147,8 @@ Collection of some of the LeetCode questions I have solved
 | ------- | ------- |
 | [0075-sort-colors](https://github.com/Michael-2702/Leetcode/tree/main/0075-sort-colors/) | Medium |
 | [0987-vertical-order-traversal-of-a-binary-tree](https://github.com/Michael-2702/Leetcode/tree/main/0987-vertical-order-traversal-of-a-binary-tree/) | Hard |
+## Matrix
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0073-set-matrix-zeroes](https://github.com/Michael-2702/Leetcode/tree/main/0073-set-matrix-zeroes/) | Medium |
 <!---LeetCode Topics End-->
